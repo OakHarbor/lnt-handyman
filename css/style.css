@@ -297,6 +297,9 @@
     z-index: 10;
     background: #fff;
     padding: 25px 0;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
 }
 
 .card-item {
@@ -445,8 +448,8 @@
 #video:before {
     content: '';
     background: rgb(241,123,37);
-background: -moz-linear-gradient(90deg, rgba(241,123,37,1) 0%, rgba(150,65,2,0.896796218487395) 100%);
-background: -webkit-linear-gradient(90deg, rgba(241,123,37,1) 0%, rgba(150,65,2,0.896796218487395) 100%);
+background: -o-linear-gradient(left, rgba(241,123,37,1) 0%, rgba(150,65,2,0.896796218487395) 100%);
+background: -webkit-gradient(linear, left top, right top, from(rgba(241,123,37,1)), to(rgba(150,65,2,0.896796218487395)));
 background: linear-gradient(90deg, rgba(241,123,37,1) 0%, rgba(150,65,2,0.896796218487395) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f17b25",endColorstr="#964102",GradientType=1);
     position: absolute;
@@ -753,7 +756,9 @@ iframe {
 
 .service-item h3:before {
     content: url("/images/gear.png");
-    transform: scale(.8);
+    -webkit-transform: scale(.8);
+        -ms-transform: scale(.8);
+            transform: scale(.8);
     position: absolute;
     left: 0px;
 }
@@ -939,6 +944,7 @@ iframe {
 
 .gallery img {
     width: 100%;
+    height: auto;
 }
 
 .gallery-button {
@@ -1023,6 +1029,7 @@ iframe {
 .info img {
     border-radius: 50%;
     margin-right: 10px;
+    display: none;
 }
 
 .info h3 {
@@ -1390,6 +1397,11 @@ iframe {
     <---          SERVICES          -->
     <--- -------------------------- -*/
 
+    #services {
+        position: relative;
+        padding-top: 470px;
+    }
+
     .top-card {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1404,8 +1416,18 @@ iframe {
             -ms-flex-pack: justify;
                 justify-content: space-between;
         width: 100%;
+        max-width: 900px;
         padding-top: 70px;
         padding-bottom: 70px;
+        margin: auto;
+        top: -180px;
+        border-radius: 10px;
+        z-index: 100;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
 
     .card-item {
@@ -1843,6 +1865,7 @@ iframe {
     }
 }
 
+
 /* Desktop */
 @media screen and (min-width: 1026px) {
 
@@ -1918,9 +1941,12 @@ iframe {
         padding-top: 70px;
         padding-bottom: 70px;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
         top: -250px;
         z-index: 200;
+        border-radius: 10px;
     }
 
     .card-item {
@@ -2170,6 +2196,7 @@ iframe {
         height: 550px !important;
         position: absolute;
         bottom: -350px;
+        max-width: 900px;
     }
 
     .bottom-image {
@@ -2384,6 +2411,61 @@ iframe {
 
     .review {
         width: 500px;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1020px) and (max-width: 1125px) {
+
+    /*-- -------------------------- -->
+    <---          QUALITIES         -->
+    <--- -------------------------- -*/
+
+    #qualities {
+        padding-top: 250px;
+        padding-bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .qualities-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .quality-card {
+        width: 270px;
+    }
+
+    .spotlight {
+        width: 600px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .quality-card:nth-child(4) {
+        width: 600px;
+        padding-left: 70px;
+        padding-right: 70px;
     }
 
 }

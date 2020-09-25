@@ -946,6 +946,7 @@ iframe {
 .gallery img {
     width: 100%;
     height: auto;
+    max-height: 100vw;
 }
 
 .gallery-button {
@@ -2385,6 +2386,7 @@ iframe {
 
     .gallery img {
         width: 20%;
+        max-height: 20vw;
     }
 
     /*-- -------------------------- -->

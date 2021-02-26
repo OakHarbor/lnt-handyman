@@ -309,6 +309,8 @@ button:hover {
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease;
+    z-index: 9999999;
+    position: relative;
 }
 
 .mobile-nav {
@@ -336,7 +338,10 @@ button:hover {
 /* Navigation Links */
 
 .mobile-wrapper img {
-	height: 48px;
+    height: 108px;
+    margin-top: 26px;
+    z-index: 99000000;
+    position: relative;
 }
 
 .navbar-menu {
@@ -645,8 +650,9 @@ button:hover {
 		display: block;
 		margin: 0 !important;
 		position: absolute;
-		left: 2em;
-        height: 50px;
+        left: 2em;
+        top: -20px;
+        height: 170px;
         width: auto;
 	}
 
@@ -943,7 +949,7 @@ footer {
 }
 
 footer img {
-    height: 60px;
+    height: 170px;
     width: auto;
     margin-bottom: 0px;
 }

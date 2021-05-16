@@ -227,7 +227,10 @@ body {
 .modal-twenty-nine,
 .modal-thirty,
 .modal-thirty-one,
-.modal-thirty-two {
+.modal-thirty-two,
+.modal-thirty-three,
+.modal-thirty-four,
+.modal-thirty-five {
     visibility: hidden;
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease;
@@ -267,7 +270,10 @@ body {
 .modal-twenty-nine.clicked,
 .modal-thirty.clicked,
 .modal-thirty-one.clicked,
-.modal-thirty-two.clicked {
+.modal-thirty-two.clicked,
+.modal-thirty-three.clicked,
+.modal-thirty-four.clicked,
+.modal-thirty-five.clicked {
     visibility: visible;
     margin: auto;
     z-index: 2000;
@@ -404,6 +410,7 @@ html.clicked {
 
     .gallery img {
         width: 50%;
+        height: 50vw;
         border: none;
         -webkit-box-shadow: none;
                 box-shadow: none;
@@ -476,6 +483,7 @@ html.clicked {
 
     .gallery img {
         width: 300px;
+        height: 300px;
         margin: 15px;
     }
 

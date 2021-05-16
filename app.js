@@ -114,6 +114,9 @@ var $modalTwentyNine = $(".modal-twenty-nine");
 var $modalThirty = $(".modal-thirty");
 var $modalThirtyOne = $(".modal-thirty-one");
 var $modalThirtyTwo = $(".modal-thirty-two");
+var $modalThirtyThree = $(".modal-thirty-three");
+var $modalThirtyFour = $(".modal-thirty-four");
+var $modalThirtyFive = $(".modal-thirty-five");
 
 // Commercial Modals
 var $modalOneC = $(".c-modal-one");
@@ -178,6 +181,9 @@ var $twentyNine = $("#twenty-nine");
 var $thirty = $("#thirty");
 var $thirtyOne = $("#thirty-one");
 var $thirtyTwo = $("#thirty-two");
+var $thirtyThree = $("#thirty-three");
+var $thirtyFour = $("#thirty-four");
+var $thirtyFive = $("#thirty-five");
 
 // Commercial
 var $oneC = $("#c-one");
@@ -368,6 +374,21 @@ $thirtyTwo.on("click", function(e) {
   $html.addClass("clicked");
 });
 
+$thirtyThree.on("click", function (e) {
+  $modalThirtyThree.addClass("clicked");
+  $html.addClass("clicked");
+});
+
+$thirtyFour.on("click", function (e) {
+  $modalThirtyFour.addClass("clicked");
+  $html.addClass("clicked");
+});
+
+$thirtyFive.on("click", function (e) {
+  $modalThirtyFive.addClass("clicked");
+  $html.addClass("clicked");
+});
+
 
 // Commcerical
 $oneC.on("click", function(e) {
@@ -522,6 +543,9 @@ $homeIcon.on("click", function(e) {
   $modalThirty.removeClass("clicked");
   $modalThirtyOne.removeClass("clicked");
   $modalThirtyTwo.removeClass("clicked");
+  $modalThirtyThree.removeClass("clicked");
+  $modalThirtyFour.removeClass("clicked");
+  $modalThirtyFive.removeClass("clicked");
 
   // Commercial
   $modalOneC.removeClass("clicked");
